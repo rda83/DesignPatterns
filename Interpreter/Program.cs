@@ -1,6 +1,6 @@
 ﻿/*
  * GOF #15
- * Interpreter (Инетпретатор - патерн поведения классов.)
+ * Interpreter (Интерпретатор - паттерн поведения классов.)
  * Для заданного языка определяет представление его грамматики, а так же интерпретатор предложений этого языка.
  * 03/07/2019
  */
@@ -45,7 +45,7 @@ namespace Interpreter
 
         public MinusExpression(Expression left, Expression right)
         {
-            this.left = left;
+            this.left  = left;
             this.right = right;
         }
 
@@ -62,7 +62,7 @@ namespace Interpreter
 
         public PlusExpression(Expression left, Expression right)
         {
-            this.left = left;
+            this.left  = left;
             this.right = right;
         }
 
@@ -79,15 +79,14 @@ namespace Interpreter
             int pos = s.Length - 1;
             while (pos > 0)
             {
-                //Expression left = null;
                 if (Char.IsDigit(s[pos]))
                 {
                     pos--;
                 }
                 else
                 {
-                    Expression left = Evaluate(s.Substring(0, pos));
-                    int number = int.Parse(s.Substring(pos + 1));
+                    Expression left  = Evaluate(s.Substring(0, pos));
+                    int number       = int.Parse(s.Substring(pos + 1));
                     Expression right = new NumberExpression(number);
 
                     Char oprt = s[pos];
