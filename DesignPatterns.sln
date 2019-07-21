@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{8B7C9D01-3E52-4F8B-8F41-B305F3B40557}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{F0C1D33C-5395-4C02-B539-ACAC9E3DD5CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8B7C9D01-3E52-4F8B-8F41-B305F3B40557}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7C9D01-3E52-4F8B-8F41-B305F3B40557}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B7C9D01-3E52-4F8B-8F41-B305F3B40557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C1D33C-5395-4C02-B539-ACAC9E3DD5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C1D33C-5395-4C02-B539-ACAC9E3DD5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C1D33C-5395-4C02-B539-ACAC9E3DD5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C1D33C-5395-4C02-B539-ACAC9E3DD5CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
