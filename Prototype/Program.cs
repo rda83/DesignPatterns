@@ -7,10 +7,6 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Prototype
 {
@@ -35,7 +31,6 @@ namespace Prototype
 
         public ShapeMaker(Shape shape)
         {
-
             this._shape = shape;
         }
 
@@ -43,7 +38,6 @@ namespace Prototype
         {
             return this._shape.Clone();
         }
-
     }
 
     abstract class Shape
@@ -70,6 +64,5 @@ namespace Prototype
         {
             return new Square(this.Color);
         }
-
     }
 }
