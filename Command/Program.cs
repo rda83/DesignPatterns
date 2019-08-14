@@ -15,17 +15,14 @@ namespace Command
     {
         static void Main(string[] args)
         {
-
             var calculator = new Calculator();
             int result = 0;
 
             result = calculator.Add(5);
             Console.WriteLine(result);
 
-            
             result = calculator.Sub(3);
             Console.WriteLine(result);
-
             
             result = calculator.Undo(2);
             Console.WriteLine(result);
@@ -33,9 +30,7 @@ namespace Command
             result = calculator.Redo(2);
             Console.WriteLine(result);
             
-
             Console.ReadLine();
-
         }
     }
 
@@ -48,13 +43,15 @@ namespace Command
         {
             this.arithmeticUnit = new ArithmeticUnit();
             this.controlUnit = new ControlUnit();
-        } 
+        }
+
         private int Run(Command command)
         {
             controlUnit.StoreCommand(command);
             controlUnit.ExecuteCommand();
             return arithmeticUnit.Register;
         }
+
         public int Add(int operand)
         {
             return Run(new Add(arithmeticUnit, operand));
@@ -101,7 +98,6 @@ namespace Command
 
         public void Undo(int levels)
         {
-
             for(int i = 0; i < levels; i++)
             {
                 if(current > 0)
@@ -135,7 +131,6 @@ namespace Command
 
         public abstract void Execute();
         public abstract void UnExecute();
-
     }
 
     class Add : Command
@@ -178,7 +173,6 @@ namespace Command
 
     class Mul : Command
     {
-
         public Mul(ArithmeticUnit arithmeticUnit, int operand)
         {
             this.arithmeticUnit = arithmeticUnit;
