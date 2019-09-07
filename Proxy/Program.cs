@@ -18,7 +18,6 @@ namespace Proxy
             proxy.Draw();
 
             Console.ReadLine();
-
         }
     }
 
